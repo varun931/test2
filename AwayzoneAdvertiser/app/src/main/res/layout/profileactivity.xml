@@ -1,0 +1,375 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/splachd">
+    <!--    <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="?android:attr/actionBarSize"
+            android:background="@color/toolbarcolor">
+            <RelativeLayout
+                android:id="@+id/profilebackarrowlayout"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true">
+                <ImageView
+                    android:id="@+id/profilebackarrow"
+                    android:layout_width="@dimen/defaultimg"
+                    android:layout_height="@dimen/defaultimg"
+                    android:textColor="@android:color/white"
+                    android:src="@drawable/leftarrow"
+                    android:layout_marginLeft="@dimen/five"
+                    android:text="@string/leftarrowA"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentLeft="true"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/back"
+                    android:textColor="@android:color/white"
+                    android:layout_toRightOf="@+id/profilebackarrow"
+                    android:layout_centerVertical="true"
+                    android:textSize="@dimen/toolbartextsizesamll"
+                    android:textStyle="bold"
+                    android:layout_marginLeft="5dp"
+                    />
+            </RelativeLayout>
+            <ImageView
+                android:id="@+id/logoimg"
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:src="@drawable/smalllogo"
+                android:layout_centerInParent="true" />
+            <!-- <TextView
+                 android:id="@+id/toolbarcentertitle"
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:layout_centerInParent="true"
+                 android:text="@string/recommendation"
+                 android:textSize="@dimen/toolbartextsize"
+                 android:textColor="@android:color/white"/>-->
+          <ImageView
+                android:id="@+id/profilepic"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:visibility="visible"
+                android:layout_centerInParent="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="@dimen/ten"
+                android:src="@drawable/createaddicon"
+                />
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:layout_width="@dimen/editprofileimagesize"
+            android:layout_height="@dimen/editprofileimagesize"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/ten"
+            android:background="@drawable/nocolorcircledrawable">
+            <ImageView
+                android:id="@+id/profileimageview"
+                android:layout_width="wrap_content"
+                android:padding="0.5dp"
+                android:layout_height="wrap_content"
+                android:scaleType="fitXY"/>
+        </RelativeLayout>
+        <TextView
+            android:id="@+id/username"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textStyle="bold"
+            android:textSize="@dimen/editprofilebigtextsize"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/five"
+            android:layout_marginBottom="@dimen/ten"
+            android:textColor="@android:color/white"
+            />
+
+
+
+        <RelativeLayout
+            android:id="@+id/editprofilebtn"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/editprofilviewheight">
+
+            <ImageView
+                android:id="@+id/editprofileimg"
+                android:layout_width="@dimen/editprofileimageicon"
+                android:layout_height="@dimen/editprofileimageicon"
+                android:layout_centerVertical="true"
+                android:src="@drawable/editprofile"
+                android:layout_marginLeft="@dimen/editprofileimageiconleft"
+                android:layout_gravity="center"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/editProfile"
+                android:textStyle="bold"
+                android:textSize="@dimen/editprofiletextsize"
+                android:layout_toRightOf="@+id/editprofileimg"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/editprofileimageiconleft"
+                android:textColor="@android:color/white"
+                />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/graye"/>
+
+        <RelativeLayout
+            android:id="@+id/changepasswordbtn"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/editprofilviewheight">
+
+            <ImageView
+                android:id="@+id/changepasowrdprofileimg"
+                android:layout_width="@dimen/editprofileimageicon"
+                android:layout_height="@dimen/editprofileimageicon"
+                android:layout_centerVertical="true"
+                android:src="@drawable/profilechangepassword"
+                android:layout_marginLeft="@dimen/editprofileimageiconleft"
+                android:layout_gravity="center"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/changepassword"
+                android:textStyle="bold"
+                android:textSize="@dimen/editprofiletextsize"
+                android:layout_toRightOf="@+id/changepasowrdprofileimg"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/editprofileimageiconleft"
+                android:textColor="@android:color/white"
+                />
+        </RelativeLayout>
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/graye"/>
+
+        <RelativeLayout
+            android:id="@+id/rateappbtn"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/editprofilviewheight">
+
+            <ImageView
+                android:id="@+id/rateprofileimg"
+                android:layout_width="@dimen/editprofileimageicon"
+                android:layout_height="@dimen/editprofileimageicon"
+                android:layout_centerVertical="true"
+                android:src="@drawable/profilerate"
+                android:layout_marginLeft="@dimen/editprofileimageiconleft"
+                android:layout_gravity="center"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/rateapp"
+                android:textStyle="bold"
+                android:layout_toRightOf="@+id/rateprofileimg"
+                android:layout_centerVertical="true"
+                android:textSize="@dimen/editprofiletextsize"
+                android:layout_marginLeft="@dimen/editprofileimageiconleft"
+                android:textColor="@android:color/white"
+                />
+        </RelativeLayout>
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/graye"/>
+        <RelativeLayout
+            android:id="@+id/referafriendbtn"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/editprofilviewheight">
+
+            <ImageView
+                android:id="@+id/referprofileimg"
+                android:layout_width="@dimen/editprofileimageicon"
+                android:layout_height="@dimen/editprofileimageicon"
+                android:layout_centerVertical="true"
+                android:src="@drawable/profilereferfrd"
+                android:layout_marginLeft="@dimen/editprofileimageiconleft"
+                android:layout_gravity="center"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/referafriend"
+                android:textStyle="bold"
+                android:textSize="@dimen/editprofiletextsize"
+                android:layout_toRightOf="@+id/referprofileimg"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/editprofileimageiconleft"
+                android:textColor="@android:color/white"
+                />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/graye"/>
+
+
+        <RelativeLayout
+            android:id="@+id/subscriptionbtn"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/editprofilviewheight">
+
+            <ImageView
+                android:id="@+id/subscriptionimg"
+                android:layout_width="@dimen/editprofileimageicon"
+                android:layout_height="@dimen/editprofileimageicon"
+                android:layout_centerVertical="true"
+                android:src="@drawable/subscription"
+                android:layout_marginLeft="@dimen/editprofileimageiconleft"
+                android:layout_gravity="center"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/subscriptions"
+                android:textStyle="bold"
+                android:textSize="@dimen/editprofiletextsize"
+                android:layout_toRightOf="@+id/subscriptionimg"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/editprofileimageiconleft"
+                android:textColor="@android:color/white"
+                />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/graye"/>
+
+
+        <RelativeLayout
+            android:id="@+id/myadrelativebtn"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/editprofilviewheight">
+            <ImageView
+                android:id="@+id/storiesprofileimg"
+                android:layout_width="@dimen/editprofileimageicon"
+                android:layout_height="@dimen/editprofileimageicon"
+                android:layout_centerVertical="true"
+                android:src="@drawable/myads"
+                android:layout_marginLeft="@dimen/editprofileimageiconleft"
+                android:layout_gravity="center"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/myads"
+                android:textStyle="bold"
+                android:textSize="@dimen/editprofiletextsize"
+                android:layout_toRightOf="@+id/storiesprofileimg"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/editprofileimageiconleft"
+                android:textColor="@android:color/white"         />
+            <RelativeLayout
+                android:id="@+id/addlistlayout"
+                android:layout_width="@dimen/editprofileimageicon"
+                android:layout_height="@dimen/editprofileimageicon"
+                android:visibility="gone"
+                android:background="@drawable/circleorange"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="@dimen/ten">
+                <TextView
+                    android:id="@+id/adlist"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:text=""
+                    android:textSize="10dp"
+                    android:textColor="@android:color/white"/>
+
+            </RelativeLayout>
+        </RelativeLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/graye"/>
+        <RelativeLayout
+            android:id="@+id/helpbtn"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/editprofilviewheight">
+
+            <ImageView
+                android:id="@+id/helpimg"
+                android:layout_width="@dimen/editprofileimageicon"
+                android:layout_height="@dimen/editprofileimageicon"
+                android:layout_centerVertical="true"
+                android:src="@drawable/help"
+                android:layout_marginLeft="@dimen/editprofileimageiconleft"
+                android:layout_gravity="center"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/help"
+                android:textStyle="bold"
+                android:textSize="@dimen/editprofiletextsize"
+                android:layout_toRightOf="@+id/helpimg"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/editprofileimageiconleft"
+                android:textColor="@android:color/white"
+                />
+        </RelativeLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/graye"/>
+        <RelativeLayout
+            android:id="@+id/signoutbtn"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/editprofilviewheight"
+            android:background="@color/tblue"
+            android:layout_margin="@dimen/editprofilsignmargin">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true">
+                <ImageView
+                    android:id="@+id/logoutprofileimg"
+                    android:layout_width="@dimen/editprofileimageicon"
+                    android:layout_height="@dimen/editprofileimageicon"
+                    android:src="@drawable/profileswitch"
+                    android:layout_marginLeft="@dimen/editprofileimageiconleft"
+                    android:layout_gravity="center"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/signout"
+                    android:textStyle="bold"
+                    android:layout_gravity="center"
+                    android:textSize="@dimen/editprofiletextsize"
+                    android:layout_marginLeft="@dimen/editprofileimageiconleft"
+                    android:textColor="@android:color/white"
+                    />
+            </LinearLayout>
+        </RelativeLayout>
+
+
+    </LinearLayout>
+    <!--    </ScrollView>-->
+</ScrollView>

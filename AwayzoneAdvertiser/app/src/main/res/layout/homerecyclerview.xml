@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="@dimen/five">
+        <RelativeLayout
+            android:id="@+id/relativelayout"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_marginRight="@dimen/five"
+            android:elevation="@dimen/five"
+            android:background="@color/orange">
+        <TextView
+            android:id="@+id/textview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:text="122"
+            android:layout_centerInParent="true"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/maindashboardisize"
+            />
+          <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginBottom="5dp"
+                    android:layout_centerHorizontal="true">
+           <ImageView
+               android:id="@+id/imageview"
+               android:layout_width="15dp"
+               android:layout_height="15dp"
+               android:src="@drawable/impressions"
+               />
+           <TextView
+               android:id="@+id/commenttextview"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:text="Impressions"
+               android:layout_marginLeft="5dp"
+               android:textSize="10sp"
+               android:textColor="@android:color/white"
+               />
+               </LinearLayout>
+
+        </RelativeLayout>
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <LinearLayout
+        android:id="@+id/accountdetail"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@android:color/white"
+        android:orientation="vertical"
+        android:paddingLeft="@dimen/twenty"
+        android:paddingRight="@dimen/twenty">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="90dp"
+            android:layout_marginTop="@dimen/thirty">
+            <FrameLayout
+                android:id="@+id/imglayout"
+                android:layout_width="92dp"
+                android:layout_height="92dp"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true">
+                <ImageView
+                    android:id="@+id/imageview"
+                    android:layout_width="90dp"
+                    android:layout_height="90dp"
+                    android:layout_centerInParent="true"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/sundar"
+                    android:visibility="visible" />
+                <ImageView
+                    android:id="@+id/imglayoutt"
+                    android:layout_width="90dp"
+                    android:layout_height="90dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:background="@drawable/imageplaceholdersc" />
+            </FrameLayout>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/signiheight"
+                android:layout_alignParentBottom="true"
+                android:layout_marginLeft="@dimen/ten"
+                android:layout_toRightOf="@+id/imglayout">
+                <EditText
+                    android:id="@+id/organiationnameedittext"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/ten"
+                    android:layout_toLeftOf="@+id/starttextview"
+                    android:background="@null"
+                    android:hint="@string/organisationname"
+                    android:textColor="@color/graye"
+                    android:textColorHint="@color/graye"
+                    android:textSize="@dimen/signintextsize" />
+                <TextView
+                    android:id="@+id/starttextview"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:text="✻"
+                    android:textColor="@color/tblue"
+                    android:textSize="12sp" />
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:layout_below="@+id/organiationnameedittext"
+                    android:background="@color/graye" />
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/signiheight"
+            android:layout_marginTop="@dimen/twenty">
+
+            <ImageView
+                android:layout_width="@dimen/defaultimg"
+                android:layout_height="@dimen/defaultimg"
+                android:layout_gravity="center"
+                android:text="@string/emailiconB"
+                android:src="@drawable/emailblack"
+                android:textColor="@color/graye"
+                android:textSize="@dimen/appiconsize" />
+
+            <EditText
+                android:id="@+id/emailedittext"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="10dp"
+                android:background="@null"
+                android:enabled="false"
+                android:hint="@string/enteremail"
+                android:textSize="@dimen/signintextsize" />
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/graye" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/signiheight"
+            android:layout_marginTop="@dimen/ten">
+
+            <ImageView
+                android:id="@+id/leftlocaitonicon"
+                android:layout_width="@dimen/defaultimg"
+                android:layout_height="@dimen/defaultimg"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:src="@drawable/locationblack"
+                android:text="@string/locationicon"
+                android:textColor="@color/graye"
+                android:textSize="@dimen/appiconsize" />
+
+            <AutoCompleteTextView
+                android:id="@+id/locationtextview"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/ten"
+                android:layout_toRightOf="@+id/leftlocaitonicon"
+                android:background="@null"
+                android:hint="@string/location"
+                android:singleLine="true"
+                android:textSize="@dimen/signintextsize"
+                android:visibility="visible" />
+
+
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/graye" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/signiheight"
+            android:layout_marginTop="@dimen/ten">
+
+            <ImageView
+                android:layout_width="@dimen/defaultimg"
+                android:layout_height="@dimen/defaultimg"
+                android:layout_gravity="center"
+                android:text="@string/telephoneiconc"
+                android:src="@drawable/phonecall"
+                android:textColor="@color/graye"
+                android:textSize="@dimen/appiconsize" />
+
+            <EditText
+                android:id="@+id/contactedittext"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="10dp"
+                android:background="@null"
+                android:inputType="number"
+                android:hint="@string/contactnumber"
+                android:textSize="@dimen/signintextsize" />
+
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/graye" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/signiheight"
+            android:layout_marginTop="@dimen/ten">
+
+            <ImageView
+                android:layout_width="@dimen/defaultimg"
+                android:layout_height="@dimen/defaultimg"
+                android:layout_gravity="center"
+                android:text="@string/peopleiconc"
+                android:src="@drawable/user"
+                android:textColor="@color/graye"
+                android:textSize="@dimen/appiconsize" />
+
+            <EditText
+                android:id="@+id/nameofperonedittext"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="10dp"
+                android:background="@null"
+                android:hint="@string/nameperson"
+                android:textSize="@dimen/signintextsize" />
+        </LinearLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/graye" />
+
+    </LinearLayout>
+
+
+
+
+
+</LinearLayout>

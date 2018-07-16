@@ -1,0 +1,236 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@drawable/splachd">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="?android:attr/actionBarSize">
+        <RelativeLayout
+            android:id="@+id/profilethirdbackarrowlayout"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true">
+            <ImageView
+                android:id="@+id/profilebackarrow"
+                android:layout_width="@dimen/defaultimg"
+                android:layout_height="@dimen/defaultimg"
+                android:src="@drawable/leftarrow"
+                android:layout_marginLeft="@dimen/five"
+                android:text="@string/leftarrowA"
+                android:textSize="@dimen/smallappiconsize"
+                android:textColor="@android:color/white"
+                android:layout_centerVertical="true"
+                android:layout_alignParentLeft="true"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/back"
+                android:textColor="@android:color/white"
+                android:layout_toRightOf="@+id/profilebackarrow"
+                android:layout_centerVertical="true"
+                android:textSize="@dimen/toolbartextsizesamll"
+                android:textStyle="bold"
+                android:layout_marginLeft="5dp"
+                />
+        </RelativeLayout>
+        <ImageView
+            android:id="@+id/logoimg"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:src="@drawable/smalllogo"
+            android:layout_centerInParent="true" />
+        <RelativeLayout
+            android:id="@+id/profilefinisharrowlayout"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true">
+            <TextView
+                android:id="@+id/next"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/finish"
+                android:textColor="@color/blue"
+                android:layout_centerVertical="true"
+                android:textSize="@dimen/toolbartextsizesamll"
+                android:textStyle="bold"
+                android:layout_marginRight="5dp"/>
+
+
+
+
+            <ImageView
+                android:id="@+id/profilesecondnextarrow"
+                android:layout_width="@dimen/defaultimg"
+                android:layout_height="@dimen/defaultimg"
+                android:src="@drawable/rightarrowblue"
+                android:text="@string/rightarrow"
+                android:layout_marginRight="@dimen/five"
+                android:layout_toRightOf="@+id/next"
+                android:textSize="@dimen/smallappiconsize"
+                android:textColor="@color/blue"
+                android:layout_centerVertical="true"/>
+
+
+
+        </RelativeLayout>
+    </RelativeLayout>
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:background="@android:color/white">
+
+
+        <RelativeLayout
+            android:id="@+id/circleonelayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@+id/doubleorangeleftarrow"
+            android:layout_marginRight="@dimen/ten"
+            android:background="@drawable/circleblue">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="1"
+                android:textStyle="bold"
+                android:textSize="@dimen/circletextsize"
+                android:layout_centerInParent="true"
+                android:textColor="@android:color/white"
+                />
+        </RelativeLayout>
+
+
+        <ImageView
+            android:id="@+id/doubleorangeleftarrow"
+            android:layout_width="@dimen/doublearrowimagesize"
+            android:layout_height="@dimen/doublearrowimagesize"
+            android:src="@drawable/doublerightarrowblue"
+            android:layout_toLeftOf="@+id/circletwolayout"
+            android:layout_marginRight="@dimen/ten"
+            android:layout_centerVertical="true"
+            />
+
+        <RelativeLayout
+            android:id="@+id/circletwolayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:background="@drawable/circleblue">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="2"
+                android:textStyle="bold"
+                android:textSize="@dimen/circletextsize"
+                android:layout_centerInParent="true"
+                android:textColor="@android:color/white"
+                />
+        </RelativeLayout>
+
+        <ImageView
+            android:id="@+id/doublegreyrightarrow"
+            android:layout_width="@dimen/doublearrowimagesize"
+            android:layout_height="@dimen/doublearrowimagesize"
+            android:src="@drawable/doublerightarrowblue"
+            android:layout_toRightOf="@+id/circletwolayout"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/ten"
+            />
+        <RelativeLayout
+            android:id="@+id/circlethreelayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/ten"
+            android:layout_toRightOf="@+id/doublegreyrightarrow"
+            android:background="@drawable/circledrawable">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="3"
+                android:textStyle="bold"
+                android:textSize="@dimen/circletextsize"
+                android:layout_centerInParent="true"
+                android:textColor="@color/orange"
+                />
+        </RelativeLayout>
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="80dp">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Looking for your culturally specific activity or are you interested in exploring another culture? Select up to 14"
+            android:textColor="@android:color/white"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/five"
+            android:layout_marginRight="@dimen/five"
+            android:gravity="center"
+            />
+    </RelativeLayout>
+<TextView
+        android:id="@+id/culturetitletext"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="18dp"
+        android:paddingLeft="@dimen/ten"
+        android:visibility="gone"
+        android:background="@android:color/white"
+        android:text="Looking for your specific interest or a interest you are interested in? Select up to 14"
+        />
+
+    <ExpandableListView
+        android:id="@+id/expandablelist"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@android:color/white">
+    </ExpandableListView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@android:color/white"
+        android:paddingLeft="@dimen/twenty"
+        android:paddingRight="@dimen/twenty"
+        android:visibility="gone"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@android:color/white"
+            android:orientation="vertical">
+            <android.support.v7.widget.Toolbar
+                android:id="@+id/toolbar"
+                android:layout_width="match_parent"
+                app:titleTextColor="@color/graye"
+                android:layout_height="?attr/actionBarSize"
+                android:background="@null"
+                app:titleTextAppearance="@style/Toolbar.TitleText"
+                app:popupTheme="@style/AppTheme.PopupOverlay">
+            </android.support.v7.widget.Toolbar>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/graye"/>
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/interestrecyclerview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+        </android.support.v7.widget.RecyclerView>
+   </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

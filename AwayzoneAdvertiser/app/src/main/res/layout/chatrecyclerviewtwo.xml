@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="@dimen/commentpadding"
+        android:orientation="horizontal"
+        android:paddingBottom="@dimen/commentpadding"
+        android:paddingLeft="@dimen/commentpadding">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_toLeftOf="@+id/userimageview"
+            android:layout_marginLeft="@dimen/commentappicon">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="10:45:55 am"
+                    android:layout_marginLeft="@dimen/commentmarginleft"
+                    android:layout_toLeftOf="@+id/clockicon"
+                    android:textColor="@android:color/black"
+                    android:textSize="@dimen/commentsmalltextsize"/>
+
+                <ImageView
+                    android:id="@+id/clockicon"
+                    android:layout_width="@dimen/ticketimg"
+                    android:layout_height="@dimen/ticketimg"
+                    android:layout_toLeftOf="@+id/date"
+                    android:text="@string/clockA"
+                    android:src="@drawable/clock"
+                    android:layout_marginRight="@dimen/commentmarginleft"
+                    android:layout_marginLeft="@dimen/five"
+                    android:textSize="@dimen/commentappicon"
+                    android:textColor="@android:color/black"/>
+
+                <TextView
+                    android:id="@+id/date"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="12.11.2017"
+                    android:layout_marginRight="@dimen/commentmarginleft"
+                    android:layout_toLeftOf="@+id/calendericon"
+                    android:textColor="@android:color/black"
+                    android:textSize="@dimen/commentsmalltextsize"/>
+
+          <ImageView
+                    android:id="@+id/calendericon"
+                    android:layout_width="@dimen/ticketimg"
+                    android:layout_height="@dimen/ticketimg"
+                    android:layout_toLeftOf="@+id/username"
+                    android:text="@string/calender"
+                    android:src="@drawable/calendar"
+                    android:layout_marginRight="@dimen/commentmarginleft"
+                    android:textSize="@dimen/commentappicon"
+                    android:textColor="@android:color/black"/>
+
+                <TextView
+                    android:id="@+id/username"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="M Johnson"
+                    android:textStyle="bold"
+                    android:layout_alignParentRight="true"
+                    android:gravity="top"
+                    android:textColor="@color/orange"
+                    android:textSize="@dimen/commenttextsize"/>
+            </RelativeLayout>
+            <TextView
+                android:id="@+id/commenttext"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/ten"
+                android:layout_gravity="right"
+                android:text="jdkj"
+                android:textColor="@android:color/black"
+                android:textSize="@dimen/commentsmalltextsize"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/userimageview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/ten"
+            android:layout_alignParentRight="true">
+
+            <ImageView
+                android:id="@+id/profilepic"
+                android:layout_width="@dimen/commentimageview"
+                android:layout_height="@dimen/commentimageview"
+                android:layout_marginLeft="@dimen/five"
+                android:src="@drawable/sundar"
+                android:layout_centerInParent="true" />
+        </LinearLayout>
+    </RelativeLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@android:color/black"/>
+</LinearLayout>

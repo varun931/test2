@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_margin="5dp">
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:elevation="@dimen/five">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/mainlayout"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:background="@drawable/light_square">
+
+        <RelativeLayout
+            android:id="@+id/addimagelayotout"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/redbigarrow">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_centerInParent="true">
+                <TextView
+                    android:id="@+id/planamount"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="$ 23"
+                    android:textStyle="bold"
+                    android:layout_gravity="center"
+                    android:textSize="26sp"
+                    android:textColor="@android:color/white"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="per month"
+                    android:textSize="18sp"
+                    android:textColor="@android:color/white"
+                    />
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/planname"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="BSNL"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:textSize="22sp"
+                android:textColor="@color/orange"
+                />
+              <TextView
+                android:id="@+id/decritpiontext"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="this i the olid command line of the project of the is of the night shift of color is the new of the coloru"
+                />
+
+            <TextView
+                android:id="@+id/noofads"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="You can create 5 add of this plan"
+                />
+        </LinearLayout>
+
+    </LinearLayout>
+      <RelativeLayout
+          android:id="@+id/subscriptionlayout"
+         android:layout_width="match_parent"
+         android:layout_height="50dp"
+         android:layout_marginTop="@dimen/ten"
+         android:background="@color/orange"
+         android:layout_gravity="bottom">
+
+
+       <TextView
+           android:id="@+id/subscriptiondate"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_centerInParent="true"
+           android:textColor="@android:color/white"
+           />
+
+
+     </RelativeLayout>
+    </LinearLayout>
+    </android.support.v7.widget.CardView>
+
+</android.support.constraint.ConstraintLayout>

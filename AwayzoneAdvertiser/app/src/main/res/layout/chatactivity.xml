@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?android:attr/actionBarSize"
+        android:background="@color/toolbarcolor">
+        <RelativeLayout
+            android:id="@+id/chatbackarrowlayout"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true">
+            <ImageView
+                android:id="@+id/profilebackarrow"
+                android:layout_width="@dimen/defaultimg"
+                android:layout_height="@dimen/defaultimg"
+                android:layout_marginLeft="@dimen/five"
+                android:text="@string/leftarrowA"
+                android:textSize="@dimen/toolbarappiconsize"
+                android:src="@drawable/leftarrow"
+                android:textColor="@android:color/white"
+                android:layout_centerVertical="true"
+                android:layout_alignParentLeft="true"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/back"
+                android:textColor="@android:color/white"
+                android:layout_toRightOf="@+id/profilebackarrow"
+                android:layout_centerVertical="true"
+                android:textSize="@dimen/toolbartextsizesamll"
+                android:textStyle="bold"
+                android:layout_marginLeft="5dp"/>
+        </RelativeLayout>
+        <TextView
+            android:id="@+id/toolbartext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text=""
+            android:src="@drawable/smalllogo"
+            android:textAllCaps="true"
+            android:textSize="@dimen/toolbartextsize"
+            android:textColor="@android:color/white"/>
+        <TextView
+            android:id="@+id/chatstatustext"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:text="@string/reopen"
+            android:gravity="center"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/toolbartextsize"
+            android:layout_marginRight="@dimen/ten">
+        </TextView>
+    </RelativeLayout>
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_below="@+id/toolbar"
+    android:orientation="vertical"
+    android:layout_above="@+id/commentview">
+
+   <TextView
+       android:id="@+id/titletext"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:text=""
+       android:textSize="@dimen/sixteen"
+       android:textStyle="bold"
+       android:layout_marginLeft="@dimen/five"
+       android:layout_marginRight="@dimen/five"
+       android:textColor="@color/orange"/>
+
+    <TextView
+        android:id="@+id/decriptiontext"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/five"
+        android:textSize="12sp"
+        android:textColor="@android:color/black"
+        android:layout_marginBottom="@dimen/twenty"
+        android:layout_marginRight="@dimen/five"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@android:color/black"/>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/chatrecyclerview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    </android.support.v7.widget.RecyclerView>
+
+</LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/commentview"
+        android:layout_width="match_parent"
+        android:background="@drawable/commentback"
+        android:layout_height="@dimen/commentpostsize"
+        android:layout_alignParentBottom="true">
+        <EditText
+            android:id="@+id/commentedittext"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_toLeftOf="@+id/postbtn"
+            android:background="@null"
+            android:paddingLeft="@dimen/commentmarginleft"
+            android:layout_marginLeft="@dimen/commentmarginleft"
+            android:hint="Write a Comment"
+            android:textColorHint="@android:color/white"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/commentedittext"
+            />
+        <RelativeLayout
+            android:id="@+id/postbtn"
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:background="@color/assmani">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/post"
+                android:textSize="@dimen/commenttextsize"
+                android:layout_centerInParent="true"
+                android:textColor="@android:color/white"
+                android:textStyle="bold"
+                />
+        </RelativeLayout>
+    </RelativeLayout>
+
+
+
+</RelativeLayout>

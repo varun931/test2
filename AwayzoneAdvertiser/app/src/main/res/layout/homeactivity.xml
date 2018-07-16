@@ -1,0 +1,348 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/splachd">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="?android:attr/actionBarSize"
+        android:background="@color/toolbarcolor">
+
+        <awayzoneadvertiser.com.advertiser.util.AppIcon
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/ten"
+            android:text="@string/file"
+            android:visibility="gone"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/toolbarappiconbisize" />
+
+        <ImageView
+            android:layout_width="@dimen/toolbarimagesize"
+            android:layout_height="@dimen/toolbarimagesize"
+            android:layout_centerInParent="true"
+            android:src="@drawable/smalllogo" />
+
+        <RelativeLayout
+            android:id="@+id/imageviebtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/ten"
+            android:background="@drawable/circlewhite">
+            <ImageView
+                android:id="@+id/profilepic"
+                android:layout_width="@dimen/toolbarimagesize"
+                android:layout_height="@dimen/toolbarimagesize"
+                android:layout_centerInParent="true" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+  <ScrollView
+      android:id="@+id/scrollview"
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      android:visibility="gone">
+      <LinearLayout
+          android:layout_width="match_parent"
+          android:layout_height="match_parent"
+          android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/notificationlayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@android:color/white">
+        <TextView
+            android:id="@+id/notificationtext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textColor="@android:color/black"
+            android:layout_marginLeft="@dimen/ten"
+            android:layout_marginTop="@dimen/ten"
+            />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_marginTop="@dimen/ten"
+            android:background="@color/graye"/>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/ratingbarlayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="@android:color/white"
+        android:layout_alignParentRight="true"
+        >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true">
+
+        <RatingBar
+            android:id="@+id/ratingbar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:numStars="5"
+            android:stepSize="0.2"
+            android:scaleX="0.75"
+            android:layout_gravity="center"
+            android:scaleY="0.75"
+            android:layout_centerVertical="true"
+            />
+        <TextView
+            android:id="@+id/ratingbartext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="(5.0)"
+            android:textSize="@dimen/twenty"
+            android:layout_marginLeft="@dimen/five"
+            android:layout_gravity="center"
+            android:textColor="@color/orange"
+            />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/macrodatafor"
+            android:textColor="@android:color/white"
+            />
+        <TextView
+            android:id="@+id/lastsevendays"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/five"
+            android:textColor="@color/blue"
+            />
+    </LinearLayout>
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/homerecyclervie"
+        android:layout_width="match_parent"
+        android:layout_marginLeft="@dimen/five"
+        android:layout_height="wrap_content">
+    </android.support.v7.widget.RecyclerView>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_margin="5dp"
+        android:visibility="gone"
+        android:orientation="vertical"
+        android:background="@drawable/square_orange">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/macrodatafor"
+                android:textColor="@android:color/black"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/five"
+                android:textColor="@android:color/black"
+                />
+        </LinearLayout>
+
+        <view
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            class="im.dacer.androidcharts.PieView"
+            android:id="@+id/pie_view" />
+    </LinearLayout>
+
+      <LinearLayout
+          android:id="@+id/pichartlayout"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_margin="5dp"
+          android:orientation="vertical"
+          android:background="@drawable/square_orange">
+          <LinearLayout
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_margin="5dp">
+             <TextView
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:text="@string/macrodatafor"
+                  android:textColor="@android:color/black"
+                  />
+              <TextView
+                  android:id="@+id/lastsevendayspie"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:layout_marginLeft="@dimen/five"
+                  android:textColor="@color/blue"
+                  />
+          </LinearLayout>
+          <com.github.mikephil.charting.charts.PieChart
+              android:id="@+id/piechart"
+              android:layout_width="match_parent"
+              android:layout_height="200dp"/>
+      </LinearLayout>
+          <LinearLayout
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:layout_margin="5dp"
+              android:background="@drawable/square_blue"
+              android:orientation="vertical">
+              <LinearLayout
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:visibility="gone"
+                  android:layout_marginLeft="5dp">
+                  <TextView
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:text="@string/macrodatafor"
+                      android:textColor="@android:color/black"
+                      />
+                  <TextView
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:text="@string/lastsevendays"
+                      android:layout_marginLeft="@dimen/five"
+                      android:textColor="@android:color/black"
+                      />
+              </LinearLayout>
+
+              <awayzoneadvertiser.com.advertiser.util.CustomViewPager
+                  android:id="@+id/customviewpager"
+                  android:layout_margin="5dp"
+                  android:layout_width="match_parent"
+                  android:layout_height="@dimen/viewpagerfragheight">
+
+              </awayzoneadvertiser.com.advertiser.util.CustomViewPager>
+
+           <!--  <android.support.v4.view.ViewPager
+                 android:id="@+id/viewpager"
+                 android:layout_margin="5dp"
+                 android:layout_width="match_parent"
+                 android:layout_height="@dimen/viewpagerfragheight">
+
+             </android.support.v4.view.ViewPager>-->
+
+
+         <RelativeLayout
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:layout_margin="5dp">
+
+          <RelativeLayout
+              android:id="@+id/previousbtn"
+              android:layout_width="@dimen/viewpagerwidth"
+              android:layout_height="@dimen/viewpagerheight"
+              android:background="@drawable/square_orange">
+              <LinearLayout
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:layout_centerInParent="true">
+
+                  <ImageView
+                      android:layout_width="@dimen/defaultimg"
+                      android:layout_height="@dimen/defaultimg"
+                      android:layout_marginLeft="@dimen/five"
+                      android:textSize="@dimen/detailappiconsize"
+                      android:text="@string/rightarrow"
+                      android:src="@drawable/left_arrow"
+                      android:textColor="@color/orange"
+                      />
+
+                  <TextView
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:text="@string/previous"
+                      android:layout_gravity="center"
+                      android:textColor="@color/orange"
+                      />
+
+              </LinearLayout>
+          </RelativeLayout>
+             <RelativeLayout
+                 android:id="@+id/nextbtn"
+                 android:layout_width="@dimen/viewpagerwidth"
+                 android:layout_height="@dimen/viewpagerheight"
+                 android:layout_alignParentRight="true"
+                 android:background="@color/blue">
+                 <LinearLayout
+                     android:layout_width="wrap_content"
+                     android:layout_height="wrap_content"
+                     android:layout_centerInParent="true">
+                     <TextView
+                         android:layout_width="wrap_content"
+                         android:layout_height="wrap_content"
+                         android:text="@string/next"
+                         android:layout_gravity="center"
+                         android:textColor="@android:color/white"
+                         />
+                     <ImageView
+                         android:layout_width="@dimen/defaultimg"
+                         android:layout_height="@dimen/defaultimg"
+                         android:layout_marginLeft="@dimen/five"
+                         android:textSize="@dimen/detailappiconsize"
+                         android:text="@string/rightarrow"
+                         android:src="@drawable/rightchevron"
+                         android:textColor="@android:color/white"
+                         />
+                 </LinearLayout>
+
+
+
+             </RelativeLayout>
+
+
+
+         </RelativeLayout>
+
+
+          </LinearLayout>
+      </LinearLayout>
+
+
+
+  </ScrollView>
+
+    <RelativeLayout
+        android:id="@+id/nodata"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@android:color/white">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/analysisdata"
+            android:gravity="center"
+            android:layout_margin="10dp"
+            android:textColor="@android:color/black"
+            android:layout_centerInParent="true"
+            android:textSize="18sp"
+            />
+
+
+    </RelativeLayout>
+
+</LinearLayout>

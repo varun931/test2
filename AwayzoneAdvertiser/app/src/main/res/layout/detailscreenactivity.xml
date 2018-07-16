@@ -1,0 +1,274 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/splachd"
+    android:orientation="vertical">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="?android:attr/actionBarSize"
+        android:background="@color/toolbarcolor">
+        <RelativeLayout
+            android:id="@+id/adddetailbackarrowlayout"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true">
+            <ImageView
+                android:id="@+id/profilebackarrow"
+                android:layout_width="@dimen/defaultimg"
+                android:layout_height="@dimen/defaultimg"
+                android:textColor="@android:color/white"
+                android:src="@drawable/leftarrow"
+                android:layout_marginLeft="@dimen/five"
+                android:text="@string/leftarrowA"
+                android:textSize="@dimen/toolbarappiconsize"
+                android:layout_centerVertical="true"
+                android:layout_alignParentLeft="true"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/back"
+                android:textColor="@android:color/white"
+                android:layout_toRightOf="@+id/profilebackarrow"
+                android:layout_centerVertical="true"
+                android:textSize="@dimen/toolbartextsizesamll"
+                android:textStyle="bold"
+                android:layout_marginLeft="5dp"
+                />
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/profilefirstnextbtn"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:visibility="gone"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true">
+
+        </RelativeLayout>
+    </RelativeLayout>
+    <ImageView
+        android:id="@+id/addimageview"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/detailimagesize"
+        android:scaleType="fitXY"/>
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@android:color/white"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp"
+    android:orientation="vertical">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/detailmargintop"
+        android:layout_marginBottom="@dimen/detailmargintop">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:id="@+id/likebutton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+            <awayzoneadvertiser.com.advertiser.util.AppIcon
+                android:id="@+id/likeicon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/toolbartextsizesamll"
+                android:text="@string/like"
+                android:textColor="@android:color/black"/>
+            <TextView
+                android:id="@+id/addlike"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="12"
+                android:layout_marginLeft="@dimen/five"
+                />
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/commentbtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <awayzoneadvertiser.com.advertiser.util.AppIcon
+                    android:id="@+id/commenticon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/messageicon"
+                    android:layout_marginLeft="@dimen/five"
+                    />
+                <TextView
+                    android:id="@+id/addcomment"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="22"
+                    android:layout_toRightOf="@+id/commenticon"
+                    android:layout_marginLeft="@dimen/five"
+                    />
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+        <!--   style="?android:attr/ratingBarStyleSmall"-->
+        <LinearLayout
+            android:id="@+id/ratingbarlayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true">
+
+        <RatingBar
+            android:id="@+id/ratingbar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:minHeight="20dp"
+            android:layout_toLeftOf="@+id/ratingbartext"
+            style="@style/Base.Widget.AppCompat.RatingBar.Small"
+            android:numStars="5"
+            android:stepSize="0.5"
+            android:scaleX="0.75"
+            android:scaleY="0.75"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            />
+        <TextView
+            android:id="@+id/ratingbartext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="(5.0)"
+            android:textColor="@color/orange"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            />
+        </LinearLayout>
+    </RelativeLayout>
+    <TextView
+        android:id="@+id/addtitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:singleLine="true"
+        android:textSize="@dimen/detailnormaltextsize"
+        android:text="Lorem ipsum dolor sit amet, consectetur adipiscisng "
+        android:textColor="@color/graye"
+        />
+    <TextView
+        android:id="@+id/adddescription"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Lorem ipsum dolor sit amet, consectetur adipiscisng elit. Fusce non odio ect. Pellentesque habitant morbi  tristique sentectus et netus et malesuda fames as turpis egestus. Pelleuntesque non sem effector dium soldas     "
+        android:textColor="@color/graye"
+        android:lines="3"
+        android:textSize="@dimen/detailnormaltextsizesmall"
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/reviewheight"
+        android:layout_marginTop="@dimen/detailmargindoubletop"
+        android:layout_marginBottom="@dimen/detailmargindoubletop">
+        <RelativeLayout
+            android:id="@+id/reviebutton"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:layout_marginRight="@dimen/ten"
+            android:background="@color/orange">
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true">
+          <awayzoneadvertiser.com.advertiser.util.AppIcon
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/file"
+                android:textSize="@dimen/appiconsize"
+                android:textColor="@android:color/white"
+                android:layout_centerVertical="true" />
+            <TextView
+                android:id="@+id/review"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0 REVIEWS"
+                android:textSize="@dimen/detailnormaltextsize"
+                android:layout_marginLeft="@dimen/five"
+                android:textStyle="bold"
+                android:layout_gravity="center"
+                android:textColor="@android:color/white"/>
+            </LinearLayout>
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:layout_marginLeft="@dimen/ten">
+
+
+
+
+        </RelativeLayout>
+   </LinearLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/detailmargintop">
+
+      <TextView
+          android:id="@+id/storycounttextview"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:textStyle="bold"
+          android:text=""
+          android:textSize="@dimen/detailnormaltextsize"
+          android:textColor="@color/orange"
+          />
+        <awayzoneadvertiser.com.advertiser.util.AppIcon
+            android:id="@+id/addstorytextview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/file"
+            android:textSize="@dimen/detailappiconsize"
+            android:textColor="@color/assmani"
+            android:layout_alignParentRight="true"/>
+    </RelativeLayout>
+
+</LinearLayout>
+    <View
+        android:layout_width="wrap_content"
+        android:layout_height="0.5dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:background="@color/graye" />
+
+    <android.support.v7.widget.RecyclerView
+    android:id="@+id/storiesrecyclerview"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white">
+
+</android.support.v7.widget.RecyclerView>
+
+    <RelativeLayout
+        android:id="@+id/storynofound"
+        android:layout_width="match_parent"
+        android:visibility="gone"
+        android:background="@android:color/white"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="No Story on this Add"
+            android:layout_centerInParent="true"
+            android:textColor="@android:color/black"
+            />
+
+    </RelativeLayout>
+
+</LinearLayout>

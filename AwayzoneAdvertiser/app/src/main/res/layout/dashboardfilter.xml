@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/sortbylastsevendays"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/bottomviewheight"
+        android:background="@android:color/white">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/sortbymagic"
+            android:textStyle="bold"
+            android:layout_centerInParent="true"
+            android:textColor="@color/orange"
+            />
+    </RelativeLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1.0dp"
+        android:background="@android:color/black"/>
+
+    <RelativeLayout
+        android:id="@+id/sortbylastmonth"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/bottomviewheight">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="15dp"
+            android:text="@string/sortbylastmonth"
+            android:textColor="@color/orange"
+            android:textStyle="bold" />
+    </RelativeLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1.0dp"
+        android:background="@android:color/black"/>
+
+    <RelativeLayout
+        android:id="@+id/sortbylastyear"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/bottomviewheight">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/sortbylastyear"
+            android:textStyle="bold"
+            android:layout_centerInParent="true"
+            android:textColor="@color/orange"
+            />
+
+    </RelativeLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1.0dp"
+        android:background="@android:color/black"/>
+
+    <RelativeLayout
+        android:id="@+id/sortingcancelbtn"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/bottomviewheight"
+        android:background="@color/orange">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/bs_cancel"
+            android:textStyle="bold"
+            android:textAllCaps="true"
+            android:layout_centerInParent="true"
+            android:textColor="@android:color/white"
+            />
+
+    </RelativeLayout>
+
+</LinearLayout>

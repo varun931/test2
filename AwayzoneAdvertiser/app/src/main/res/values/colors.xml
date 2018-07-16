@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#DA4600</color>
+    <color name="colorPrimaryDark">#DA4600</color>
+    <color name="colorAccent">#DA4600</color>
+    <color name="orange">#DA4600</color>
+    <color name="blue">#1C7FC0</color>
+    <color name="lightgraye">#E5E5E5</color>
+    <color name="graye">#757575</color>
+    <color name="fblue">#303F9F</color>
+    <color name="tblue">#1E88E5</color>
+    <color name="assmani">#00E5FF</color>
+    <color name="yellow">#FFD740</color>
+    <color name="darkblue">#283593</color>
+    <color name="darkorange">#BF360C</color>
+    <color name="black">#ff000000</color>
+    <color name="dblue">#3598DB</color>
+    <color name="dyellow">#F39C11</color>
+    <color name="ddarkblue">#015F9D</color>
+    <color name="dpurple">#8F44AD</color>
+    <color name="windowBackground">#1C1C1C</color>
+    <color name="colorButtonNormal">#FFFFFB</color>
+    <color name="textColorPrimary">#FFFFFB</color>
+    <color name="textColorPrimaryInverse">#1C1C1C</color>
+    <color name="overlay">#AA1C1C1C</color>
+    <color name="divider">#333333</color>
+    <color name="dlightblue">#009FBC</color>
+    <color name="dorange">#E84C3D</color>
+    <color name="dgreen">#27AE61</color>
+    <color name="dgreeddn">#BDBDBD</color>
+    <color name="toolbarcolor">#263238</color>
+</resources>
